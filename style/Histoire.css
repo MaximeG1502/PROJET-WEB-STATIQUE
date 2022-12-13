@@ -1,0 +1,161 @@
+/* STYLE POUR TOUTE LA PAGE*/
+* {
+	background-color : black ;
+	color: white;
+	font-family: sans-serif;
+}
+
+#logo {
+    width : 1000px ;
+    height : 200px;
+	align-items : center;
+}
+
+#creation {
+	width : 300px ;
+	height : 200px ;
+	text-align : center ;
+}
+
+#login1 {
+	color : white ;
+	font-size : 50px;
+	text-align : center;
+	text-decoration : underline;
+}
+
+/* STYLE DES DIFFERENTS PARAGRAPGES*/
+.P1 {
+	text-align : center;
+
+}
+
+.P2 {
+	text-align : center;
+}
+
+#conception {
+	width : 300px ;
+	height : 200px ;
+}
+
+#messi {
+	width : 300px ;
+	height : 200px ;
+	float : left ;
+}
+
+#ronaldo {
+	width : 300px ;
+	height : 200px ;
+	float : right ;
+}
+
+/* STYLE APPLIQUE AU MENU DEROULANT*/
+
+.nav-menu{
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+
+.nav-menu a:hover, .show:hover{
+    color: gold;
+}
+
+.navbar input, .nav-menu{
+    display: none;
+}
+
+
+
+.navbar{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.icon{
+    fill: white;
+    cursor: pointer;
+}
+
+[id^=btn]:checked + ul{
+    display: block;
+}
+
+/*ADAPATATION DE LA PAGE */
+@media screen and (600px<=width){ /*pour tablette*/
+    .icon{
+        display: none;
+    }
+    .nav-menu{
+        display: initial;
+        position: static;
+    }
+    .nav-item{
+        display: inline-block;
+        margin-left: 20px;
+        position: relative;
+    }
+    .dropdown{
+        position: absolute;
+        background-color: black;
+        top: 70px;
+        right: 0;
+        padding-right: 40px;
+        width: max-content;
+    }
+    #logo { 
+        width : 600px ;
+        height : 150px;
+    }
+}
+
+.nav-item a, .drop-item a, .show{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 1.2rem;
+}
+
+@media screen and (768px<=width){ /*pour ordinateur*/
+    .icon{
+        display: none;
+    }
+    .nav-menu{
+        display: initial;
+        position: static;
+    }
+    .nav-item{
+        display: inline-block;
+        margin-left: 20px;
+        position: relative;
+    }
+    .dropdown{
+        position: absolute;
+        background-color: black;
+        top: 70px;
+        right: 0;
+        padding-right: 40px;
+        width: max-content;
+    }
+    #logo { 
+        width : 1000px ;
+        height : 200px;
+    }
+}
+
+.nav-item a, .drop-item a, .show{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 1.2rem;
+}

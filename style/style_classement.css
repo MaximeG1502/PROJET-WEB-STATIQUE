@@ -1,0 +1,180 @@
+
+
+/* STYLE POUR TOUTE LA PAGE*/
+*{
+	background-color: black;
+	font-family: sans-serif;
+}
+
+
+#logo {
+    width : 400px ;
+    height : 100px;
+    margin-left : 120px;
+}
+
+body{
+	background-color: black;
+}
+
+/* STYLE APPLIQUE AU TABLEAU*/
+table{
+	border-width: 1px;
+	border-color: white;
+	border-style:solid;
+	color: white;
+	border-collapse:collapse	
+}
+th{
+	line-height: 25px;
+	border-width:1px;
+	border-style:solid;
+}
+td{
+	line-height: 25px;
+	border-width:1px;
+	border-style:solid;
+}
+
+/* STYLE APPLIQUE AU MENU DEROULANT*/
+
+.nav-menu{
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+
+.nav-menu a:hover, .show:hover{
+    color: gold;
+}
+
+.navbar input, .nav-menu{
+	display: none;
+}
+
+.navbar{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.icon{
+    fill: white;
+    cursor: pointer;
+}
+
+[id^=btn]:checked + ul{
+    display: block;
+}
+/*ADAPATATION DE LA PAGE */
+/*ADAPATATION DE LA PAGE */
+@media screen and (600px<=width){ /*pour tablette*/
+    .icon{
+        display: none;
+    }
+    .nav-menu{
+        display: initial;
+        position: static;
+    }
+    .nav-item{
+        display: inline-block;
+        margin-left: 20px;
+        position: relative;
+    }
+    .dropdown{
+        position: absolute;
+        background-color: black;
+        top: 70px;
+        right: 0;
+        padding-right: 40px;
+        width: max-content;
+    }
+    #logo { 
+        width : 600px ;
+        height : 150px;
+    }
+}
+
+.nav-item a, .drop-item a, .show{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 1.2rem;
+}
+
+@media screen and (768px<=width){ /*pour ordinateur*/
+    .icon{
+        display: none;
+    }
+    .nav-menu{
+        display: initial;
+        position: static;
+    }
+    .nav-item{
+        display: inline-block;
+        margin-left: 20px;
+        position: relative;
+    }
+    .dropdown{
+        position: absolute;
+        background-color: black;
+        top: 70px;
+        right: 0;
+        padding-right: 40px;
+        width: max-content;
+    }
+    #logo { 
+        width : 1000px ;
+        height : 200px;
+    }
+}
+
+.nav-item a, .drop-item a, .show{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 1.2rem;
+}
+
+#profil1{
+	color : white ;
+	font-size : 20px;
+	text-decoration : none;
+	font-size: 50px;
+}
+
+#profil2{
+	color : white ;
+	font-size : 20px;
+	text-decoration : underline;
+	font-size: 70px;
+}
+
+#profil3{
+	color : white ;
+	font-size : 20px;
+	text-decoration : underline;
+	font-size: 40px;
+}
+
+#profil3:hover {
+	color : gold;
+}
+
+#profil3{
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+
+@keyframes clignoter {
+    0%   { opacity:1; }
+    40%   {opacity:0; }
+    100% { opacity:1; }
+  }
